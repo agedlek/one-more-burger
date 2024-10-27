@@ -1,0 +1,42 @@
+.summary {
+  width: 100%; /* Pełna szerokość kontenera */
+  max-width: 700px; /* Maksymalna szerokość kontenera */
+  margin: 0 auto; /* Wyśrodkowanie kontenera */
+  padding: 2rem; /* Padding wewnętrzny */
+  background-color: #1e1e1e; /* Ciemne tło, pasujące do reszty aplikacji */
+  border-radius: 8px; /* Zaokrąglone rogi */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Cień dla kontenera */
+}
+
+.summary h2 {
+  font-size: 2.4rem; /* Większy rozmiar nagłówka */
+  color: #edc84b; /* Kolor nagłówka */
+  margin-bottom: 1.5rem; /* Odstęp poniżej nagłówka */
+  text-align: center; /* Wyśrodkowanie nagłówka */
+  font-weight: 500; /* Lekko pogrubiony nagłówek */
+}
+
+.summary ul {
+  list-style-type: none; /* Usunięcie punktów z listy */
+  padding: 0; /* Usunięcie paddingu z listy */
+  margin-bottom: 2rem; /* Odstęp poniżej listy */
+}
+
+.summary li {
+  padding: 0.8rem 0; /* Padding górny i dolny dla elementów listy */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Granica dolna dla elementów listy */
+  font-size: 1.6rem; /* Rozmiar czcionki dla elementów listy */
+  color: #edc84b; /* Kolor tekstu dla elementów listy */
+}
+
+.summary li:last-child {
+  border-bottom: none; /* Usunięcie dolnej granicy dla ostatniego elementu */
+}
+
+.summary p {
+  font-size: 1.6rem; /* Rozmiar czcionki dla podsumowania ceny */
+  font-weight: 600; /* Pogrubienie tekstu */
+  text-align: center; /* Wyśrodkowanie tekstu */
+  color: #edc84b; /* Kolor tekstu */
+  margin-top: 1rem; /* Odstęp górny */
+}

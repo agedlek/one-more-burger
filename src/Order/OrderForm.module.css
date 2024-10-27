@@ -1,0 +1,77 @@
+.orderForm {
+  width: 100%; /* Pełna szerokość kontenera */
+  min-width: 500px;
+  max-width: 1200px; /* Zwiększenie maksymalnej szerokości formularza */
+  margin: 0 auto; /* Wyśrodkowanie formularza */
+  padding: 2rem; /* Padding wewnętrzny formularza */
+  background-color: #1e1e1e; /* Ciemne tło dla formularza */
+  border-radius: 8px; /* Zaokrąglone rogi */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Cień dla formularza */
+}
+
+.formRow {
+  display: flex; /* Flexbox do ustawienia etykiety i inputa w wierszu */
+  flex-direction: column; /* Ustawienie elementów w kolumnie */
+  margin-bottom: 1.5rem; /* Odstęp między wierszami */
+}
+
+label {
+  font-size: 1.6rem; /* Rozmiar czcionki dla etykiety */
+  color: #edc84b; /* Kolor etykiety */
+  margin-bottom: 0.5rem; /* Odstęp poniżej etykiety */
+}
+
+input,
+textarea {
+  font-size: 1.6rem; /* Rozmiar czcionki dla inputów i textarea */
+  padding: 1rem; /* Padding wewnętrzny */
+  border: 1px solid #edc84b; /* Granica inputów i textarea */
+  border-radius: 4px; /* Zaokrąglone rogi */
+  background-color: #2e2e2e; /* Ciemne tło dla inputów */
+  color: #ffffff; /* Kolor tekstu */
+  resize: none; /* Wyłączenie zmiany rozmiaru textarea */
+}
+
+input:focus,
+textarea:focus {
+  outline: none; /* Usunięcie konturu po kliknięciu */
+  border-color: #edc84b; /* Zmiana koloru granicy na złoty przy fokusu */
+  box-shadow: 0 0 5px rgba(237, 200, 75, 0.5); /* Efekt świecenia przy fokusu */
+}
+
+.navigation {
+  display: flex; /* Flexbox do ustawienia przycisków w wierszu */
+  justify-content: space-between; /* Rozmieszczenie przycisków */
+  margin-top: 2rem; /* Odstęp górny */
+}
+
+button {
+  font-size: 1.6rem; /* Rozmiar czcionki dla przycisków */
+  padding: 1rem 2rem; /* Padding wewnętrzny przycisków */
+  border: none; /* Usunięcie granicy */
+  border-radius: 4px; /* Zaokrąglone rogi */
+  cursor: pointer; /* Zmiana kursora na wskaźnik */
+  transition: background-color 0.3s, transform 0.3s; /* Efekt przejścia */
+}
+
+.orderBtn {
+  background-color: #edc84b; /* Kolor tła przycisku zamawiania */
+  color: #0c0b09; /* Kolor tekstu przycisku */
+}
+
+.backBtn {
+  background-color: #3e3e3e; /* Ciemny kolor tła dla przycisku powrotu */
+  color: #edc84b; /* Kolor tekstu przycisku - złoty */
+}
+
+button:hover {
+  transform: scale(1.05); /* Powiększenie przycisków przy najechaniu */
+}
+
+.orderBtn:hover {
+  background-color: #d8b841; /* Jaśniejszy kolor przycisku zamawiania przy najechaniu */
+}
+
+.backBtn:hover {
+  background-color: #4c4c4c; /* Jaśniejszy kolor przycisku powrotu przy najechaniu */
+}
