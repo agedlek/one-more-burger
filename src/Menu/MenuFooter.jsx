@@ -1,10 +1,12 @@
 import styles from "./MenuFooter.module.css";
 import { countCartTotalPrice } from "../helpers";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { AppContext } from "../appContext";
 
-function MenuFooter(props) {
+function MenuFooter() {
   const navigate = useNavigate();
-  const cart = props.cart;
+  const { cart } = useContext(AppContext);
   const cartIsEmpty = cart.length === 0;
   const totalPrice = countCartTotalPrice(cart);
   const totalQuantity = cart.reduce((acc, item) => acc + item.quantity, 0);

@@ -1,9 +1,14 @@
 import styles from "./CartSummary.module.css";
-import cartData from "./cartData";
 import { countCartTotalPrice } from "../helpers";
+import { AppContext } from "../appContext";
+import { useContext } from "react";
+
+// za pomoca useContext mozemy pobrac nasz koszyk w dowolnym komponencie
+// nie potrzebujemy juz statycznego koszyku z cartData
+// metody updateCart do komponentu burger nie musimy przenosic przez wszystkie pietra
 
 function CartSummary() {
-  const cart = cartData;
+  const { cart } = useContext(AppContext);
   const totalPrice = countCartTotalPrice(cart);
 
   return (
