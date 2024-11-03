@@ -4,6 +4,7 @@ import AppLayout from "./components/AppLayout";
 import MenuPage from "./Menu/MenuPage";
 import OrderPage from "./Order/OrderPage";
 import SummaryPage from "./Summary/SummaryPage";
+import { AppProvider } from "./appContext";
 
 const router = createBrowserRouter([
   {
@@ -25,8 +26,13 @@ const router = createBrowserRouter([
     ],
   },
 ]);
+
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <AppProvider>
+      <RouterProvider router={router} />
+    </AppProvider>
+  )
 }
 
 export default App;

@@ -5,7 +5,6 @@ import styles from "./Menu.module.css";
 function Menu(props) {
   const burgers = burgersData;
   const numBurgers = burgers.length;
-  const updateCart = props.onUpdate;
 
   return (
     <main className={styles.menu}>
@@ -14,11 +13,7 @@ function Menu(props) {
       {numBurgers > 0 ? (
         <ul className={styles.burgers}>
           {burgersData.map((burgers) => (
-            <Burger
-              onUpdate={updateCart}
-              burgerObject={burgers}
-              key={burgers.name}
-            />
+            <Burger burgerObject={burgers} key={burgers.name} />
           ))}
         </ul>
       ) : (

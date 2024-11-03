@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import styles from "./Burger.module.css";
+import { AppContext } from "../appContext";
 
 function Burger(props) {
-  const updateCart = props.onUpdate;
-
+  const { updateCart } = useContext(AppContext);
   const burger = props.burgerObject;
 
   const [quantity, setQuantity] = useState(0);
